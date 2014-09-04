@@ -25,7 +25,7 @@ setup(
     author='Divio AG',
     author_email='info@divio.ch',
     url='https://github.com/divio/djangocms-teaser',
-    packages=['djangocms_teaser', 'djangocms_teaser.migrations'],
+    packages=['djangocms_teaser', 'djangocms_teaser.migrations', 'djangocms_teaser.migrations_django'],
     license='LICENSE.txt',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
