@@ -1,5 +1,5 @@
 {% load i18n %}
-<h2>{{ object.title|title }}</h2>
+<h2>{{ object.title }}</h2>
 {% if object.image %}
 	{% if link %}<a href="{{ link }}">{% endif %}
 		<img src="{{ object.image.url }}" alt="{{ object.title }}"/>
