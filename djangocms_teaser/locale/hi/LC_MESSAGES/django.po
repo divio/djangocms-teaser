@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: django-cms\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-06 14:10+0100\n"
+"POT-Creation-Date: 2014-08-14 14:22+0200\n"
 "PO-Revision-Date: 2014-02-06 13:31+0000\n"
 "Last-Translator: Chive <kim@smuzey.ch>\n"
 "Language-Team: Hindi (http://www.transifex.com/projects/p/django-cms/language/hi/)\n"
@@ -21,31 +21,31 @@ msgstr ""
 msgid "Teaser"
 msgstr "Teaser"
 
-#: models.py:13
+#: models.py:21
 msgid "title"
 msgstr "शीर्षक"
 
-#: models.py:16
+#: models.py:24
 msgid "image"
 msgstr "छवि"
 
-#: models.py:19
+#: models.py:27
 msgid "page"
 msgstr "पृष्ठ"
 
-#: models.py:20
+#: models.py:28
 msgid "If present image will be clickable"
 msgstr "यदि वर्तमान छवि क्लिक करने योग्य हो जाएगा"
 
-#: models.py:24
+#: models.py:32
 msgid "link"
 msgstr "जोड़ना"
 
-#: models.py:25
+#: models.py:33
 msgid "If present image will be clickable."
 msgstr "यदि वर्तमान छवि क्लिक करने योग्य हो जाएगा."
 
-#: models.py:27
+#: models.py:35
 msgid "description"
 msgstr "वर्णन"
 
