@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
@@ -7,7 +9,8 @@ try:
 except ImportError:
     def get_plugin_media_path(instance, filename):
         """
-        See cms.models.pluginmodel.get_plugin_media_path on django CMS 3.0.4+ for information
+        See cms.models.pluginmodel.get_plugin_media_path on django CMS 3.0.4+
+        for information
         """
         return instance.get_media_path(filename)
 from cms.utils.compat.dj import python_2_unicode_compatible
@@ -33,8 +36,8 @@ class Teaser(CMSPlugin):
         help_text=_("If present image will be clickable."))
 
     description = models.TextField(_("description"), blank=True, null=True)
-    
+
     def __str__(self):
         return self.title
-    
+
     search_fields = ('description',)
