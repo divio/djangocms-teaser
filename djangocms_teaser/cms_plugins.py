@@ -26,6 +26,6 @@ class TeaserPlugin(CMSPluginBase):
             'placeholder': placeholder,
             'link': link
         })
-        return context 
- 
+        return context
+
 plugin_pool.register_plugin(TeaserPlugin)
