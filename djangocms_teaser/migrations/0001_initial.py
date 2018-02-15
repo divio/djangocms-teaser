@@ -15,12 +15,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Teaser',
             fields=[
-                ('cmsplugin_ptr', models.OneToOneField(serialize=False, parent_link=True, auto_created=True, to='cms.CMSPlugin', primary_key=True)),
+                ('cmsplugin_ptr', models.OneToOneField(serialize=False, parent_link=True, auto_created=True, to='cms.CMSPlugin', primary_key=True, on_delete=models.CASCADE)),
                 ('title', models.CharField(verbose_name='title', max_length=255)),
                 ('image', models.ImageField(verbose_name='image', blank=True, null=True, upload_to=cms.models.pluginmodel.get_plugin_media_path)),
                 ('url', models.CharField(help_text='If present image will be clickable.', blank=True, null=True, max_length=255, verbose_name='link')),
                 ('description', models.TextField(verbose_name='description', blank=True, null=True)),
-                ('page_link', models.ForeignKey(help_text='If present image will be clickable', blank=True, verbose_name='page', to='cms.Page', null=True)),
+                ('page_link', models.ForeignKey(help_text='If present image will be clickable', blank=True, verbose_name='page', to='cms.Page', null=True, on_delete=models.CASCADE)),
             ],
             options={
                 'abstract': False,
